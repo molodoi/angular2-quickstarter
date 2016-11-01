@@ -1,0 +1,23 @@
+<h1>
+    {{ title }}
+</h1>
+<p>
+    Version : {{ version }}
+</p>
+<form #itemForm="ngForm" >
+
+<input [(ngModel)]="newItem.reference" name="reference" minlength="5" required #reference="ngModel"/>
+<span [hidden]="reference.valid || reference.pristine">Champs non valide</span>
+
+<input [(ngModel)]="newItem.name" name="name" minlength="3" required  #name="ngModel"/>
+<span [hidden]="name.valid || name.pristine">Champs non valide</span>
+
+<input [(ngModel)]="newItem.state" name="state" required/>
+
+{{ newItem | json }}
+
+<button [disabled]="!itemForm.form.valid" (click)="creatObject()">Ajouter un objet</button>
+</form>
+<div *ngFor="let item of collection">
+    <item [item]="item"></item>
+</div>

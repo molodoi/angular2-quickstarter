@@ -1,0 +1,19 @@
+### WebStorm ###
+# User-specific stuff:
+/node_modules/
+/node_modules/*
+/.idea/
+.idea/
+.idea/*
+.idea/*.iml
+.idea/*.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/encoding.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/a_maCollec.iml
+.idea/workspace.xml
+/.idea/workspace.xml
